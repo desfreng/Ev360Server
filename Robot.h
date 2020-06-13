@@ -29,14 +29,6 @@ public:
 
     void stop();
 
-    void gyro_cal();
-
-    int angle();
-
-    float distance();
-
-    bool pressed();
-
 private:
 
     void wait_running() const;
@@ -46,10 +38,6 @@ private:
     RotatingWheel _up;
     RotatingWheel _right;
     RotatingWheel _left;
-
-    ev3dev::gyro_sensor _gs;
-    ev3dev::touch_sensor _ts;
-    ev3dev::ultrasonic_sensor _us;
 };
 
 

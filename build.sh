@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PROJECT_DIR="/home/gabriel/Bureau/Ev360Mover"
+PROJECT_DIR="/home/gabriel/Bureau/Ev360Server/"
 DOCKER_CONTAINER="ev360mover"
 
 PROJECT_NAME="$(basename $PROJECT_DIR)"

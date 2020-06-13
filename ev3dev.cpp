@@ -141,7 +141,7 @@ namespace ev3dev {
         std::ofstream &ofstream_open(const std::string &path) {
             std::ofstream &file = ofstream_cache(path);
             if (!file.is_open()) {
-                // Don't buffer writes to avoid latency. Also saves a bit of memory.
+                // Don't _buf writes to avoid latency. Also saves a bit of memory.
                 file.rdbuf()->pubsetbuf(NULL, 0);
                 file.open(path);
             } else {

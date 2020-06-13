@@ -197,7 +197,7 @@ namespace ev3dev {
 
         // Bin Data: read-only
         // Writes the unscaled raw values in the `value<N>` attributes into the
-        // user-provided struct/buffer.  Use `bin_data_format`, `num_values` and the
+        // user-provided struct/_buf.  Use `bin_data_format`, `num_values` and the
         // individual sensor documentation to determine how to interpret the data.
         template<class T>
         void bin_data(T *buf) const {
